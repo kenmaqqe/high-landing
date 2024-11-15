@@ -57,7 +57,7 @@ const Footer = () => {
           <img src={Logo} alt="footer-logo" className='cursor-pointer'/>
           <h2 className="text-wrap text-[52px] font-normal mt-10">Want to recieve our awesome stories?</h2>
           <form action="" className="mt-5">
-            <span className="h-fit flex"><input type="email" className="h-[54px] w-36 md:w-[220px] w-4/5 px-3 text-black" placeholder="Enter email"/><Button name={'Subscribe'} colorBg={'button-white'}/></span>
+            <span className="h-fit flex"><input type="email" className="h-[54px]  md:w-[220px] w-4/5 px-3 text-black" placeholder="Enter email"/><Button name={'Subscribe'} colorBg={'button-white'}/></span>
           </form>
         </div>
         <div className='flex md:w-1/3 justify-between md:flex-row flex-col items-center md:items-start'>
@@ -78,7 +78,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='flex justify-between mt-5 mb-5 md:flex-row flex-col-reverse items-center'>
-        <div><h3>© Created by <a href='https://www.linkedin.com/in/kenmaqqe/' target='_blank'>Kenmaqqe</a>, </h3><h3>All rights reserved.</h3></div>
+        <div className='text-center md:text-start'><h3>© Created by <a href='https://www.linkedin.com/in/kenmaqqe/' target='_blank'>Kenmaqqe</a>, </h3><h3>All rights reserved.</h3></div>
         <div>
           <span className='flex space-x-4 my-5'>
             {socials.map((a,key)=>{
