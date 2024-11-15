@@ -8,6 +8,10 @@ import Linkedin from '../assets/Linkedin.svg'
 import YouTube from '../assets/YouTube.svg'
 
 const Footer = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault(); // зупиняє відправку форми і перезавантаження сторінки
+    // додаткові дії можуть бути тут, якщо потрібно
+  };
   const navigation = [
     {
       name: 'About us',
@@ -56,7 +60,7 @@ const Footer = () => {
         <div className='md:w-1/3'>
           <img src={Logo} alt="footer-logo" className='cursor-pointer'/>
           <h2 className="text-wrap text-[52px] font-normal mt-10">Want to recieve our awesome stories?</h2>
-          <form action="" className="mt-5">
+          <form action="" className="mt-5" onSubmit={handleSubmit}>
             <span className="h-fit flex"><input type="email" className="h-[54px]  md:w-[220px] w-4/5 px-3 text-black" placeholder="Enter email"/><Button name={'Subscribe'} colorBg={'button-white'}/></span>
           </form>
         </div>

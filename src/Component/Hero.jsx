@@ -6,6 +6,9 @@ import MasterCardLogo from '../assets/MasterCard.svg'
 import PayPalLogo from '../assets/PayPal.svg'
 
 const Hero = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault(); 
+  };
   const image = [
     {
       url: VisaLogo,
@@ -26,7 +29,7 @@ const Hero = () => {
         <h2 className="text-wrap md:text-7xl text-5xl">Always Track & Analyze Your Business Statistics To Succeed.</h2>
         <p className="text-base">A better way to manage your sales, team, clients & marketing
         — on a single platform. Powerful, affordable & easy.</p>
-        <form action="" className="mt-5">
+        <form action="" className="mt-5" onClick={handleSubmit}>
           <span className="h-fit flex"><input type="email" className="h-[54px] md:w-[220px] w-3/5 px-3" placeholder="Enter email"/><Button name={'Get started'} colorBg={'button-black'}/></span>
         </form>
         <div className="flex">
