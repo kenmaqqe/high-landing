@@ -27,7 +27,7 @@ const Hero = () => {
         <p className="text-base">A better way to manage your sales, team, clients & marketing
         — on a single platform. Powerful, affordable & easy.</p>
         <form action="" className="mt-5">
-          <span className="h-fit flex"><input type="email" className="h-[54px] w-36 md:w-[220px] px-3" placeholder="Enter email"/><Button name={'Get started'} colorBg={'button-black'}/></span>
+          <span className="h-fit flex"><input type="email" className="h-[54px] w-36 md:w-[220px] w-4/5 px-3" placeholder="Enter email"/><Button name={'Get started'} colorBg={'button-black'}/></span>
         </form>
         <div className="flex">
           {image.map((a,key)=>{
