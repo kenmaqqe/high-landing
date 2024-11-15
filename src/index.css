@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+.button-black{
+  background-color: #151515;
+  border: solid 1px black;
+  color: white;
+}
+.button-white{
+  background-color: white;
+  border: solid 1px white;
+  color: #151515;
+}
+.button-black:hover{
+  background-color: #333030;
+  border: solid 1px black;
+}
+.button-white:hover{
+  border: solid 1px black;
+}
+body{
+  background-color: #F0F0F0;
+}
+.bg{
+  background-color: #F0F0F0;
+}
+.suare{
+  list-style: square;
+}
+.pricing-standart{
+  border: 1px solid black;
+}
+.pricing-black{
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+.pricing-white{
+  background-color: white;
+
+}
+.button-standart-pricing{
+  background-color: #151515;
+  border: solid 1px black;
+  color: white;
+}
+.button-standart-pricing:hover{
+  background-color: #333030;
+  border: solid 1px black;
+}
+.button-white-pricing{
+  background-color: white;
+  border: solid 1px white;
+  color: #151515;
+}
+.button-white-pricing:hover{
+  border: solid 1px black;
+}
+.visible{
+  animation: show 1s;
+}
+@keyframes show {
+  0%{
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
