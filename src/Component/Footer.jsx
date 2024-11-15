@@ -57,18 +57,18 @@ const Footer = () => {
           <img src={Logo} alt="footer-logo" className='cursor-pointer'/>
           <h2 className="text-wrap text-[52px] font-normal mt-10">Want to recieve our awesome stories?</h2>
           <form action="" className="mt-5">
-            <span className="h-fit flex"><input type="email" className="h-[54px] w-36 md:w-[220px] px-3 text-black" placeholder="Enter email"/><Button name={'Subscribe'} colorBg={'button-white'}/></span>
+            <span className="h-fit flex"><input type="email" className="h-[54px] w-36 md:w-[220px] w-4/5 px-3 text-black" placeholder="Enter email"/><Button name={'Subscribe'} colorBg={'button-white'}/></span>
           </form>
         </div>
         <div className='flex md:w-1/3 justify-between md:flex-row flex-col items-center md:items-start'>
-          <ul className='space-y-5 my-5'>
+          <ul className='space-y-5 my-5 text-center md:text-start'>
             {navigation.map((a,key)=>{
               return (
                 <li key={key}><a href={a.url} className='hover:text-gray-500'>{a.name}</a></li>
               )
             })}
           </ul>
-          <ul className='space-y-5 my-5'>
+          <ul className='space-y-5 my-5 text-center md:text-start'>
             {['Lead generation','Customer engagement','Customer support','Help Center Articles','Outbound Messages'].map((a,key)=>{
               return (
                 <li className='hover:text-gray-500 cursor-pointer' key={key}>{a}</li>
